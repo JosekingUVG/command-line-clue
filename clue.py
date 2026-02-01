@@ -321,8 +321,9 @@ else:
 '''
     
     accuse_path = Path("game/accuse.py")
-    with open(accuse_path, "w") as f:
+    with open(accuse_path, "w", encoding="utf-8") as f:
         f.write(script_content)
+
 
   def check_lateral_path(self, current_segments, next_segments):
     if len(current_segments) != len(next_segments):
